@@ -1,0 +1,44 @@
+body {
+  background: rgb(209, 201, 201);
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product {
+  width: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.error {
+  background: rgb(215, 183, 183);
+  border: 2px solid rgb(104, 24, 24);
+  font-size: 1rem;
+  margin: 2px;
+  padding: 1rem;
+}
+
+.loader {
+  border: 18px solid white;
+  width: 90px;
+  height: 90px;
+  border-top: 18px solid rgb(150, 69, 69);
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  position: absolute;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
