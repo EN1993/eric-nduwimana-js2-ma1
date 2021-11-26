@@ -39,10 +39,10 @@ const filteredProduct = product.filter(function(item) {
 
 product = filteredProduct;
 
-
+productsItem();
 }
 
-productsItem();
+
  
   
  
