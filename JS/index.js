@@ -30,9 +30,19 @@ search.onkeyup = function (event) {
   
 console.log(event);
 
+const searchValue = event.target.value.trim()
+const filteredProduct = product.filter(function(item) {
+  if (item.price <= (searchValue)) {
+    return true;
+  }
+});
+
+product = filteredProduct;
+
+
 }
 
-
+productsItem();
  
   
  
