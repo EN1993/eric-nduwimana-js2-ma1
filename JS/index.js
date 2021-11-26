@@ -4,10 +4,12 @@ const search = document.querySelector(".search");
 
 const url="https://fakestoreapi.com/products";
 
+
+
 async function productsItem() {
   const response= await fetch(url);
   const product = await response.json();
-  console.log(product);
+  
 
   
 
@@ -23,4 +25,16 @@ async function productsItem() {
 }
 
 productsItem();
+
+search.onkeyup = function (event) {
+  
+console.log(event);
+
+}
+
+
+ 
+  
+ 
+
 
