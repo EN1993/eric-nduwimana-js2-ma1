@@ -5,7 +5,7 @@ const favourite = getExistingFavs();
 const productContainer = document.querySelector(".container");
 
 if (favourite.length === 0) {
-  productContainer.innerHTML =" No Favourites Yet";
+  productContainer.innerHTML =" No Favourites Added Yet";
 }
 
 favourite.forEach((favourites) => {

@@ -49,16 +49,15 @@ body {
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 24px;
+  cursor: pointer;
 }
-
-
 
 .menu a.active {
   color: rgb(0, 155, 64);
 }
 .product i {
- 
   font-size: 30px;
+  cursor: pointer;
 }
 
 .product i.fa {
@@ -66,19 +65,13 @@ body {
 }
 
 @media only screen and (min-width: 1000px) {
-
   .container {
-   
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
-
 }
 
 @media only screen and (min-width: 500px) {
-
   .container {
-   
     grid-template-columns: 1fr 1fr;
   }
 }
