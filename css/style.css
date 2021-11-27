@@ -4,14 +4,11 @@ body {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .product {
-  width: 260px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin: 10px;
   padding: 5px;
   border: 2px solid black;
@@ -42,4 +39,27 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.menu {
+  margin: 15px 0;
+}
+
+.menu a {
+  color: grey;
+  text-decoration: none;
+}
+
+.menu a.active {
+  color: darkred;
+}
+.product i {
+  /* position: relative;
+  left: 166px;
+  top: 10px; */
+  font-size: 30px;
+}
+
+.product i.fa {
+  color: darkred;
 }
