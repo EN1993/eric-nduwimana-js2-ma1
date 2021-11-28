@@ -1,9 +1,10 @@
 body {
   background: rgb(209, 201, 201);
+  margin: 0 auto;
 }
 .container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 25px auto;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -29,7 +30,8 @@ body {
   border-top: 18px solid rgb(150, 69, 69);
   border-radius: 50%;
   animation: spin 2s linear infinite;
-  position: absolute;
+  
+ 
 }
 
 @keyframes spin {

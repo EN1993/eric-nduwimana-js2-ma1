@@ -1,6 +1,11 @@
+
+// # Task Lever 1 and 2
+
 import {getExistingFavs} from"./utils/favFunctions.js";
 const productContainer = document.querySelector(".container");
 const search = document.querySelector(".search");
+
+
 
 const favourite = getExistingFavs();
 
@@ -12,7 +17,6 @@ async function productsItem() {
   const response= await fetch(url);
   const product = await response.json();
   
-
   
 
   product.forEach(function (item) {
@@ -32,7 +36,7 @@ async function productsItem() {
 
 
 
-
+    
 
     productContainer.innerHTML += `<div class="product">
     
@@ -89,22 +93,7 @@ productsItem();
 
 
 
-// search.onkeyup = function (event) {
-  
-// // console.log(event);
 
-// const searchValue = event.target.value.trim()
-// const filteredProduct = product.filter(function(item) {
-//   if (item.price <= (searchValue)) {
-//     return true;
-//   }
-// });
-
-
-// product = filteredProduct;
-// productsItem();
-
-// }
 
 
 
